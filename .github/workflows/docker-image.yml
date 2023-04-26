@@ -16,4 +16,3 @@ jobs:
           push: true
           tags:
             gminatto/kube-news:v1
-            gminatto/kube-news:latest
