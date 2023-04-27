@@ -23,6 +23,6 @@ jobs:
           push: true
           tags:
             gminatto/kube-news:1.${{ github.run_number }}
-            tags:
-              gminatto/kube-news:latest
+          #tags:
+            #gminatto/kube-news:latest
             
