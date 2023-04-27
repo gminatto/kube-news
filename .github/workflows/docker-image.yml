@@ -22,4 +22,6 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags:
-            gminatto/kube-news:v1
+            gminatto/kube-news:${{github.run_number}}
+            gminatto/kube-news:latest
+            
