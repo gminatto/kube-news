@@ -23,6 +23,17 @@ jobs:
           push: true
           tags:
             gminatto/kube-news:1.${{ github.run_number }}
-          #tags:
             #gminatto/kube-news:latest
+  CD:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3.5.2
+        - name: Definindo o context
+          uses: Azure/aks-set-context@v3
+          with:
+            method: kubeconfig
+            kubeconfig: ${{secrets.K8S_CONFIG}}
+            
+          
+
             
